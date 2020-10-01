@@ -1,9 +1,10 @@
 from views import index
-
+from cgi import parse_qs, escape
 
 def app(environ, start_response):
         data = index(environ)
-        print(data)
+        print("inputs6 ----------------- ", environ['wsgi.input'].read())
+        
         start_response("200 OK", [
             ("Content-Type", "text/html"),
             ("Content-Length", str(len(data)))
