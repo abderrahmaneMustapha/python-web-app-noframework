@@ -1,3 +1,3 @@
-from ..utils.render import render
+from utils import render
 def index(environ):
     return render("templates/index.html")

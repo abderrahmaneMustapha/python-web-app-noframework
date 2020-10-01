@@ -1,4 +1,4 @@
-
+from views import index
 
 
 def app(environ, start_response):
